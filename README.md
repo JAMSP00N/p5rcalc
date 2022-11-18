@@ -1,4 +1,7 @@
 # p5rcalc
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ad4834c0-80a4-472d-9c27-1859de3bbcd9/deploy-status)](https://app.netlify.com/sites/p5rcalc/deploys)
+
 <!-- 
 This template should help get you started developing with Vue 3 in Vite.
 
