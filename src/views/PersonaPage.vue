@@ -58,7 +58,7 @@ export default {
                 <th class="column-header column-level" rowspan="2">Level</th>
                 <th class="column-header column-arcana" rowspan="2">Arcana</th>
                 <th class="column-header" colspan="5">Stats</th>
-                <th class="column-header" colspan="10">Affinities</th>
+                <th class="column-header desktop-only" colspan="10">Affinities</th>
             </tr>
             <tr>
                 <th class="column-stat">St</th>
@@ -66,7 +66,7 @@ export default {
                 <th class="column-stat">En</th>
                 <th class="column-stat">Ag</th>
                 <th class="column-stat">Lu</th>
-                <th class="column-affinity" v-for="element in stripUnblockable(elements)" :key="element">
+                <th class="column-affinity desktop-only" v-for="element in stripUnblockable(elements)" :key="element">
                     <img class="element-icon" :src="`../assets/icon_${ element.toLowerCase() }.png`" />
                 </th>
             </tr>
@@ -76,6 +76,25 @@ export default {
                 <td class="column-level centered">{{ persona.level }}</td>
                 <td class="column-arcana centered">{{ persona.arcana }}</td>
                 <td class="column-stat centered" v-for="stat in persona.stats" :key="stat">{{ stat }}</td>
+                <td class="column-affinity centered desktop-only"
+                    v-for="aff in persona.affinities" :key="aff">{{ aff }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="persona-affinities" class="mobile-only">
+        <thead>
+            <tr>
+                <th class="column-header" colspan="10">Affinities</th>
+            </tr>
+            <tr>
+                <th class="column-affinity" v-for="element in stripUnblockable(elements)" :key="element">
+                    <img class="element-icon" :src="`../assets/icon_${ element.toLowerCase() }.png`" />
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr :class="{ dlc: persona.dlc, max: persona.max, treasure: persona.treasure }">
                 <td class="column-affinity centered"
                     v-for="aff in persona.affinities" :key="aff">{{ aff }}</td>
             </tr>
@@ -141,10 +160,15 @@ export default {
 </template>
 
 <style scoped>
+img.inherit-icon {
+    margin: auto;
+}
+
+td.column-skill-element {
+    padding: auto;
+}
+
 @media (min-width: 1280px) {
-    img.inherit-icon {
-        margin: auto;
-    }
 
     tr.row-skill {
         height: 36px;
@@ -152,11 +176,38 @@ export default {
 
     td.column-skill-element {
         min-height: 36px;
-        padding: auto;
     }
 
     td.column-skill-name, td.column-skill-effect {
         padding: 4px 8px;
+    }
+}
+
+@media (min-width: 1024px) {
+    tr.row-skill {
+        height: 32px;
+    }
+
+    td.column-skill-element {
+        min-height: 32px;
+    }
+
+    td.column-skill-name, td.column-skill-effect {
+        padding: 3px 6px;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    table#persona-stats {
+        margin: 2vh 0 0 0!important;
+    }
+
+    table#persona-affinities {
+        margin: 0 0 2vh 0!important;
+    }
+
+    td.column-skill-name, td.column-skill-effect {
+        padding: 3px 6px;
     }
 }
 </style>

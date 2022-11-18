@@ -129,8 +129,6 @@ export default {
         </optgroup>
     </datalist>
 
-    <dlc-filter @dlc-toggled="lockedDlc = getLockedDlc()"></dlc-filter>
-
     <router-link class="centered persona-redirect redirect-banner"
         :to="{ name: 'Persona', params: { name: serializeName(name) } }">
         &lt;&lt; Back to Persona
@@ -157,8 +155,7 @@ export default {
         </span>
     </div>
 
-    <!-- TODO(jam): finish styling for 1280+px displays -->
-    <!-- TODO(jam): write styling for 1024+px & 1024-px displays -->
+    <dlc-filter @dlc-toggled="lockedDlc = getLockedDlc()"></dlc-filter>
 
     <table id="fusion-recipes">
         <thead>
@@ -214,12 +211,48 @@ export default {
     span.skill-block {
         border: 2px solid var(--color-ui-text);
         cursor: pointer;
+        margin: 3px 0;
+        padding: 4px;
         user-select: none;
     }
     span.skill-block * { cursor: pointer; }
 
     input.skill-block-remove {
         visibility: hidden;
+    }
+
+    img.element-fusion-link {
+        cursor: pointer;
+        margin: 0 5px;
+        width: 1.2rem;
+    }
+
+    div#skill-search {
+        display: inline-flex;
+        min-width: 100%;
+    }
+
+    input#skill-search-field {
+        flex: auto;
+        padding: 2px;
+    }
+
+    input#skill-search-add {
+        background-color: var(--color-ui-background);
+        border: 2px solid var(--color-ui-text);
+        color: var(--color-ui-text);
+        font-weight: 700;
+        margin: 2px 4px;
+        padding: 3px;
+    }
+        
+    div#skill-list {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin: 2vh 0 0 0;
+        max-width: 100%;
+        width: auto;
     }
 
     .incomplete:not(.max, .treasure) * {
@@ -234,39 +267,32 @@ export default {
         text-decoration: line-through;
     }
 
+    @media (max-width: 1023.98px) {
+        td.column-name {
+            font-size: 1.1rem;
+            font-weight: 900;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        td.column-level {
+            padding: 0 3px;
+        }
+    }
+
     @media (min-width: 1280px) {
         img.element-fusion-link {
-            cursor: pointer;
-            margin: 0 5px;
             width: 1.5rem;
         }
 
-        div#skill-search {
-            display: inline-flex;
-            min-width: 100%;
-        }
-
-        input#skill-search-field {
-            flex: auto;
-            padding: 2px;
-        }
-
         input#skill-search-add {
-            background-color: var(--color-ui-background);
-            border: 2px solid var(--color-ui-text);
-            color: var(--color-ui-text);
-            font-weight: 700;
             margin: 2px 5px;
             padding: 4px;
         }
-
+        
         div#skill-list {
-            display: inline-flex;
-            flex-wrap: wrap;
             gap: 6px;
             margin: 2vh 0 0 0;
-            max-width: 100%;
-            width: auto;
         }
 
         span.skill-block {

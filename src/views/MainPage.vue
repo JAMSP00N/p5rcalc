@@ -74,12 +74,13 @@ export default {
 </script>
 
 <template>
-    <dlc-filter></dlc-filter>
 
     <h1 id="page-title">P5R Calculator</h1>
 
     <input id="persona-search" placeholder="Search for a Persona..." type="text" :value="searchQuery"
         @input="event => searchQuery = event.target ? (event.target as HTMLTextAreaElement).value : ''" />
+    
+    <dlc-filter></dlc-filter>
 
     <table id="persona-list">
         <thead>
@@ -93,8 +94,8 @@ export default {
                 <th class="column-header column-name column-header-sortable"
                     :id="'name' === sortBy ? `sorting-${ sortReverse ? 'dsc' : 'asc' }` : ''"
                     rowspan="2" @click="sort('name')">Name</th>
-                <th class="column-header" colspan="5">Stats</th>
-                <th class="column-header" colspan="10">Affinities</th>
+                <th class="column-header column-stat" colspan="5">Stats</th>
+                <th class="column-header column-affinity" colspan="10">Affinities</th>
             </tr>
             <tr>
                 <th class="column-stat">St</th>
@@ -133,15 +134,24 @@ export default {
 </template>
 
 <style>
-
 </style>
 
 <style scoped>
+.column-stat, .column-affinity {
+    display: none;
+}
+
+input#persona-search {
+    margin: auto;
+    min-width: calc(100% - 8px);
+    width: calc(100% - 8px);
+    padding: 4px;
+}
+
 @media (min-width: 1280px) {
     input#persona-search {
-        margin: auto;
-        min-width: 1032px;
-        padding: 4px;
+        min-width: 100%;
+        width: 100%;
     }
 }
 
@@ -149,6 +159,16 @@ export default {
 
     td.column-fuse {
         min-width: 50px;
+    }
+
+    .column-stat, .column-affinity {
+        display: table-cell!important;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    input#persona-search {
+        margin: 0 0 8px 0;
     }
 }
 </style>
