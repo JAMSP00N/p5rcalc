@@ -2,42 +2,6 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ad4834c0-80a4-472d-9c27-1859de3bbcd9/deploy-status)](https://app.netlify.com/sites/p5rcalc/deploys)
 
-<!-- 
-This template should help get you started developing with Vue 3 in Vite.
+**All data structures were ripped directly from [chinhodado](https://github.com/chinhodado)'s fusion calculator:** https://github.com/chinhodado/persona5_calculator **. Without their compilation of Persona and skill data, this project would have been a lot more of a pain than it was worth.**
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-``` -->
+This fusion calculator is designed to let the user search through all potential recipes for a given Persona and filter them by inheritable skills. All valid recipes will be sorted by cost. If a recipe's components don't innately know a skill, but can themselves be fused to learn it, the user can click on the icon next to their name to open another tab to learn how to pass that skill down.
