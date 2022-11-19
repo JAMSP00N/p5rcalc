@@ -108,6 +108,9 @@ const getValidNormalRecipes = (result: PersonaData, lockedDlc?: string[]): Fusio
                 if (parent2.name === result.name)
                     return;
 
+                if (parent1.name === parent2.name)
+                    return;
+
                 let siblingModifier: number = 0;
                 if (parent1.treasure || parent2.treasure) {
                     if (parent1.treasure && parent2.treasure) {
