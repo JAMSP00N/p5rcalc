@@ -94,8 +94,6 @@ const getValidNormalRecipes = (result: PersonaData, lockedDlc?: string[]): Fusio
     });
 
     const siblingPersonas = getAllPersonasOfArcana(result.arcana, lockedDlc);
-    const selfIdx = siblingPersonas.findIndex(sibling => sibling.name === result.name);
-    siblingPersonas.splice(selfIdx, 1);
 
     const recipes: FusionRecipe[] = [];
     arcanaCombos.forEach(combo => {
@@ -126,19 +124,36 @@ const getValidNormalRecipes = (result: PersonaData, lockedDlc?: string[]): Fusio
                         siblingModifier = getSiblingModifier(result.arcana, parent2.name);
                 }
 
-                const siblingLower = siblingPersonas[Math.max(selfIdx + siblingModifier - 1, 0)];
-                let siblingUpper: PersonaData|undefined = siblingPersonas[Math.min(selfIdx + siblingModifier, siblingPersonas.length - 1)];
+                const parentAverageLevel = 1 + Math.floor((parent1.level + parent2.level) >> 1);
+                if (parentAverageLevel > result.level)
+                    return;
 
-                if (siblingLower === siblingUpper)
-                    siblingUpper = undefined;
+                let parentResult: PersonaData = NO_PERSONA;
+                siblingPersonas.forEach(sibling => {
+                    if (NO_PERSONA === parentResult && sibling.level >= parentAverageLevel) {
+                        parentResult = sibling;
+                        return;
+                    }
+                });
 
-                const parentAverageLevel = Math.floor((parent1.level + parent2.level) >> 1);
-                const levelDelta = Math.abs(result.level - parentAverageLevel);
-                const levelDeltaLower = Math.abs((siblingLower ? siblingLower.level : 101) - parentAverageLevel);
-                const levelDeltaUpper = Math.abs((siblingUpper ? siblingUpper.level : 101) - parentAverageLevel);
+                if (NO_PERSONA === parentResult)
+                {
+                    const lastSibling = [ ...siblingPersonas ].pop();
+                    if (!lastSibling)
+                        return;
 
-                if (levelDelta < levelDeltaLower && levelDelta < levelDeltaUpper &&
-                    !listContainsNormalCombo(recipes, parent1, parent2))
+                    parentResult = lastSibling;
+                }
+
+                if (0 !== siblingModifier)
+                {
+                    const prIdx = siblingPersonas.findIndex(sibling => sibling.name === parentResult.name);
+                    const newParentResult = siblingPersonas[prIdx + siblingModifier];
+                    if (newParentResult)
+                        parentResult = newParentResult;
+                }
+
+                if (parentResult.name === result.name)
                     recipes.push({ result, parents: [ parent1, parent2 ], complete: false });
             });
         });
