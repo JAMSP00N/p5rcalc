@@ -174,32 +174,38 @@ export default {
                 </tr>
                 <tr v-for="parent in recipe.parents"
                     :class="{ incomplete: !recipe.complete, dlc: parent?.dlc, max: parent?.max, treasure: parent?.treasure }">
-                    <td class="centered column-level">{{ parent?.level }}</td>
-                    <td class="column-name" v-if="parent">
-                        <router-link v-if="recipe.complete" target="_blank"
-                            :to="{ name: 'Persona', params: { name: serializeName(parent.name) } }">
-                            {{ parent?.name }}
-                        </router-link>
-                        <template v-else>
-                            <router-link target="_blank" v-if="parent.treasure"
+                    <template v-if="parent">
+                        <td class="centered column-level">
+                            {{ parent?.currentLevel }}
+                            <strong v-if="parent.level !== parent.currentLevel"> (+{{ parent.currentLevel - parent.level }})</strong>
+                        </td>
+                        <td class="column-name">
+                            <router-link v-if="recipe.complete" target="_blank"
                                 :to="{ name: 'Persona', params: { name: serializeName(parent.name) } }">
                                 {{ parent?.name }}
                             </router-link>
                             <template v-else>
-                                <router-link target="_blank"
-                                    :to="{ name: 'Fusion', params: { name: serializeName(parent.name), skills: serializeSkills(parent) } }">
+                                <router-link target="_blank" v-if="parent.treasure"
+                                    :to="{ name: 'Persona', params: { name: serializeName(parent.name) } }">
                                     {{ parent?.name }}
                                 </router-link>
-                                <template v-for="element in recipeSkillElements" :key="element">
+                                <template v-else>
                                     <router-link target="_blank"
-                                        :to="{ name: 'Fusion', params: { name: serializeName(parent.name), skills: serializeSkills(parent, element) } }">
-                                        <img class="element-fusion-link" v-if="personaCanInherit(parent, element)"
-                                            :src="getElementIcon(element)" />
+                                        :to="{ name: 'Fusion', params: { name: serializeName(parent.name), skills: serializeSkills(parent) } }">
+                                        {{ parent?.name }}
                                     </router-link>
+                                    <template v-for="element in recipeSkillElements" :key="element">
+                                        <router-link target="_blank"
+                                            :to="{ name: 'Fusion', params: { name: serializeName(parent.name), skills: serializeSkills(parent, element) } }">
+                                            <img class="element-fusion-link" v-if="personaCanInherit(parent, element)"
+                                                :src="getElementIcon(element)" />
+                                        </router-link>
+                                    </template>
                                 </template>
                             </template>
-                        </template>
-                    </td>
+                        </td>
+                    </template>
+                    
                 </tr>
             </template>
         </tbody>
