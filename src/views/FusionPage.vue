@@ -91,8 +91,6 @@ export default {
             }
         },
         removeSkill (skillName: string) {
-            console.log(skillName);
-
             if (!this.recipeSkills.includes(Skills[skillName]))
                 return;
 
