@@ -99,10 +99,12 @@ li {
 
     div.collapsed {
         max-height: 0!important;
+        pointer-events: none;
     }
 
     div.collapsed > ul {
         opacity: 0!important;
+        pointer-events: none;
     }
 
     ul {
