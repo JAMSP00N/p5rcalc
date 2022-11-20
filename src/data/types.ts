@@ -50,7 +50,7 @@ export const enum Affinity {
     RESIST =    'rs',
     NULL =      'nu',
     REPEL =     'rp',
-    ABSORB =    'ab',
+    DRAIN =    'dr',
 };
 
 interface InheritanceMap {

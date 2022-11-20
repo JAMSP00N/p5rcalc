@@ -30,14 +30,14 @@ export const Personas: PersonaMap = {
         level: 75,
 		currentLevel: 75,
         arcana: Arcana.JUDGEMENT,
-        affinities: [Affinity.ABSORB, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.ABSORB],
+        affinities: [Affinity.DRAIN, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.DRAIN],
         skills: [
             ['Mabufudyne', 0],
             ['Megaton Raid', 0],
             ['Enduring Soul', 0],
             ['Flash Bomb', 78],
             ['Ailment Boost', 79],
-            ['Absorb Phys', 80],
+            ['DRAIN Phys', 80],
             ['Gigantomachia', 81]
         ],
         stats: [51, 42, 58, 38, 43],
@@ -81,7 +81,7 @@ export const Personas: PersonaMap = {
         level: 81,
 		currentLevel: 81,
         arcana: Arcana.EMPRESS,
-        affinities: [Affinity.REPEL, Affinity.REPEL, Affinity.WEAK, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK],
+        affinities: [Affinity.REPEL, Affinity.REPEL, Affinity.WEAK, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK],
         skills: [
             ['Diamond Dust', 0],
             ['Marakukaja', 0],
@@ -101,7 +101,7 @@ export const Personas: PersonaMap = {
         level: 13,
 		currentLevel: 13,
         arcana: Arcana.LOVERS,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [ ['Mazio', 0], ['Magaru', 0], ['Media', 0], ['Nocturnal Flash', 15], ['Baisudi', 16], ['Divine Grace', 18] ],
         stats: [7, 10, 9, 11, 9],
         trait: 'Electric Bloodline'
@@ -112,7 +112,7 @@ export const Personas: PersonaMap = {
         level: 44,
 		currentLevel: 44,
         arcana: Arcana.COUNCILLOR,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Mafreila', 0],
             ['Defense Master', 0],
@@ -340,7 +340,7 @@ export const Personas: PersonaMap = {
             ['Thermopylae', 0],
             ['Enduring Soul', 84],
             ['Samarecarm', 85],
-            ['Absorb Curse', 86],
+            ['DRAIN Curse', 86],
             ['Blazing Hell', 88]
         ],
         stats: [49, 50, 48, 54, 52],
@@ -353,7 +353,7 @@ export const Personas: PersonaMap = {
         level: 82,
 		currentLevel: 82,
         arcana: Arcana.EMPEROR,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL],
         skills: [
             ['Panta Rhei', 0],
             ['Revolution', 0],
@@ -402,7 +402,7 @@ export const Personas: PersonaMap = {
         level: 87,
 		currentLevel: 87,
         arcana: Arcana.DEVIL,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.REPEL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.REPEL],
         skills: [
             ['Maeigaon', 0],
             ['Mamudoon', 0],
@@ -475,7 +475,7 @@ export const Personas: PersonaMap = {
         level: 67,
 		currentLevel: 67,
         arcana: Arcana.HIEROPHANT,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.RESIST],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.RESIST],
         skills: [
             ['Freidyne', 0],
             ['Diarahan', 0],
@@ -495,7 +495,7 @@ export const Personas: PersonaMap = {
         level: 67,
 		currentLevel: 67,
         arcana: Arcana.FOOL,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.REPEL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.REPEL],
         skills: [
             ['Mabufudyne', 0],
             ['One-shot Kill', 0],
@@ -533,7 +533,7 @@ export const Personas: PersonaMap = {
         level: 59,
 		currentLevel: 59,
         arcana: Arcana.TOWER,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.RESIST],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.RESIST],
         skills: [
             ['Mamudoon', 0],
             ['Flash Bomb', 0],
@@ -591,7 +591,7 @@ export const Personas: PersonaMap = {
         level: 45,
 		currentLevel: 45,
         arcana: Arcana.TEMPERANCE,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.RESIST],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.RESIST],
         skills: [
             ['Swift Strike', 0],
             ['Mabufula', 0],
@@ -622,7 +622,7 @@ export const Personas: PersonaMap = {
         level: 55,
 		currentLevel: 55,
         arcana: Arcana.CHARIOT,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Agidyne', 0],
             ['Megaton Raid', 0],
@@ -640,7 +640,7 @@ export const Personas: PersonaMap = {
         level: 62,
 		currentLevel: 62,
         arcana: Arcana.DEATH,
-        affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.WEAK, Affinity.ABSORB, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.ABSORB],
+        affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.WEAK, Affinity.DRAIN, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.DRAIN],
         skills: [
             ['Mudoon', 0],
             ['Bloodbath', 0],
@@ -667,7 +667,7 @@ export const Personas: PersonaMap = {
             ['Gigantomachia', 0],
             ['Fortify Spirit', 90],
             ['Psycho Blast', 91],
-            ['Absorb Psy', 92],
+            ['DRAIN Psy', 92],
             ['Concentrate', 94]
         ],
         stats: [56, 57, 54, 53, 51],
@@ -679,7 +679,7 @@ export const Personas: PersonaMap = {
         level: 74,
 		currentLevel: 74,
         arcana: Arcana.STRENGTH,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NULL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NULL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK],
         skills: [
             ['Maragidyne', 0],
             ['Heat Wave', 0],
@@ -698,7 +698,7 @@ export const Personas: PersonaMap = {
         level: 28,
 		currentLevel: 28,
         arcana: Arcana.MAGICIAN,
-        affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL],
+        affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL],
         skills: [
             ['Pulinpa', 0],
             ['Life Drain', 0],
@@ -787,7 +787,7 @@ export const Personas: PersonaMap = {
             ['Makougaon', 0],
             ['Amrita Shower', 84],
             ['Auto-Maraku', 86],
-            ['Absorb Bless', 87],
+            ['DRAIN Bless', 87],
             ['Salvation', 89]
         ],
         stats: [44, 57, 49, 51, 55],
@@ -937,7 +937,7 @@ export const Personas: PersonaMap = {
         level: 86,
 		currentLevel: 86,
         arcana: Arcana.HERMIT,
-        affinities: [Affinity.REPEL, Affinity.REPEL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.REPEL, Affinity.REPEL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Gigantomachia', 0],
             ['Evil Smile', 0],
@@ -945,7 +945,7 @@ export const Personas: PersonaMap = {
             ['Atomic Flare', 88],
             ['Nuke Amp', 90],
             ['Debilitate', 91],
-            ['Absorb Nuke', 92]
+            ['DRAIN Nuke', 92]
         ],
         stats: [61, 55, 58, 48, 43],
         trait: 'Ailment Hunter',
@@ -976,7 +976,7 @@ export const Personas: PersonaMap = {
         level: 63,
 		currentLevel: 63,
         arcana: Arcana.MAGICIAN,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Psiodyne', 0],
             ['Masukunda', 0],
@@ -1035,7 +1035,7 @@ export const Personas: PersonaMap = {
         level: 23,
 		currentLevel: 23,
         arcana: Arcana.STAR,
-        affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [ ['Tetra Break', 0], ['Tarukaja', 0], ['Garula', 0], ['Wind Boost', 25], ['Magarula', 26], ['Resist Wind', 27] ],
         stats: [14, 17, 16, 15, 14],
         trait: 'Intense Focus'
@@ -1046,7 +1046,7 @@ export const Personas: PersonaMap = {
         level: 77,
 		currentLevel: 77,
         arcana: Arcana.TEMPERANCE,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL],
         skills: [
             ['Maziodyne', 0],
             ['Mabufudyne', 0],
@@ -1066,7 +1066,7 @@ export const Personas: PersonaMap = {
         level: 53,
 		currentLevel: 53,
         arcana: Arcana.SUN,
-        affinities: [Affinity.RESIST, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.RESIST, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Miracle Punch', 0],
             ['Tempest Slash', 0],
@@ -1164,7 +1164,7 @@ export const Personas: PersonaMap = {
         level: 84,
 		currentLevel: 84,
         arcana: Arcana.STAR,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL],
         skills: [
             ['Vacuum Wave', 0],
             ['Nocturnal Flash', 0],
@@ -1339,7 +1339,7 @@ export const Personas: PersonaMap = {
         skills: [
             ['Mediarahan', 0],
             ['Samarecarm', 0],
-            ['Absorb Wind', 0],
+            ['DRAIN Wind', 0],
             ['Insta-Heal', 87],
             ['Maziodyne', 88],
             ['Spell Master', 89],
@@ -1385,7 +1385,7 @@ export const Personas: PersonaMap = {
         level: 2,
 		currentLevel: 2,
         arcana: Arcana.MAGICIAN,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [ ['Agi', 0], ['Rakunda', 0], ['Sharp Student', 4], ['Dazzler', 5], ['Resist Sleep', 7] ],
         stats: [2, 3, 3, 3, 2],
         trait: 'Thermal Conduct'
@@ -1513,7 +1513,7 @@ export const Personas: PersonaMap = {
         level: 61,
 		currentLevel: 61,
         arcana: Arcana.EMPEROR,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL],
         skills: [
             ['Bufudyne', 0],
             ['Ice Break', 0],
@@ -1838,7 +1838,7 @@ export const Personas: PersonaMap = {
             ['Abysmal Surge', 0],
             ['Life Drain', 0],
             ['Maeigaon', 72],
-            ['Absorb Curse', 73],
+            ['DRAIN Curse', 73],
             ['Spirit Drain', 74],
             ['Fortify Spirit', 75]
         ],
@@ -1852,16 +1852,16 @@ export const Personas: PersonaMap = {
         level: 93,
 		currentLevel: 93,
         arcana: Arcana.STAR,
-        affinities: [Affinity.NULL, Affinity.NULL, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.ABSORB],
+        affinities: [Affinity.NULL, Affinity.NULL, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.DRAIN],
         skills: [
             ['Gigantomachia', 0],
-            ['Absorb Curse', 0],
+            ['DRAIN Curse', 0],
             ['Morning Star', 94],
             ['Spell Master', 95],
             ['Heat Riser', 96],
             ['Repel Bless', 97],
             ['Insta-Heal', 98],
-            ['Absorb Phys', 99]
+            ['DRAIN Phys', 99]
         ],
         stats: [61, 59, 59, 56, 51],
         trait: 'Allure of Wisdom',
@@ -1892,7 +1892,7 @@ export const Personas: PersonaMap = {
         level: 90,
 		currentLevel: 90,
         arcana: Arcana.TOWER,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Inferno', 0],
             ['Fire Amp', 0],
@@ -1943,7 +1943,7 @@ export const Personas: PersonaMap = {
         level: 73,
 		currentLevel: 73,
         arcana: Arcana.TOWER,
-        affinities: [Affinity.NEUTRAL, Affinity.NULL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NULL],
+        affinities: [Affinity.NEUTRAL, Affinity.NULL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NULL],
         skills: [
             ['Mapsiodyne', 0],
             ['One-shot Kill', 0],
@@ -1962,7 +1962,7 @@ export const Personas: PersonaMap = {
         level: 93,
 		currentLevel: 93,
         arcana: Arcana.FAITH,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL],
         skills: [
             ['Invigorate 3', 0],
             ['Salvation', 0],
@@ -1993,7 +1993,7 @@ export const Personas: PersonaMap = {
         level: 58,
 		currentLevel: 58,
         arcana: Arcana.JUSTICE,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.RESIST, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NULL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.RESIST, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NULL],
         skills: [
             ['Megaton Raid', 0],
             ['Hamaon', 0],
@@ -2013,7 +2013,7 @@ export const Personas: PersonaMap = {
         level: 89,
 		currentLevel: 89,
         arcana: Arcana.JUSTICE,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.REPEL, Affinity.ABSORB, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.WEAK],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.REPEL, Affinity.DRAIN, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.WEAK],
         skills: [
             ['Mahamaon', 0],
             ['Sword Dance', 0],
@@ -2053,7 +2053,7 @@ export const Personas: PersonaMap = {
         level: 52,
 		currentLevel: 52,
         arcana: Arcana.HIEROPHANT,
-        affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB],
+        affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN],
         skills: [
             ['Regenerate 3', 0],
             ['Brain Jack', 0],
@@ -2091,7 +2091,7 @@ export const Personas: PersonaMap = {
         level: 39,
 		currentLevel: 39,
         arcana: Arcana.SUN,
-        affinities: [Affinity.RESIST, Affinity.RESIST, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.RESIST, Affinity.RESIST, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Tentarafoo', 0],
             ['Mafreila', 0],
@@ -2128,14 +2128,14 @@ export const Personas: PersonaMap = {
         level: 60,
 		currentLevel: 60,
         arcana: Arcana.HANGEDMAN,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.RESIST, Affinity.RESIST, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.RESIST, Affinity.RESIST, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL],
         skills: [
             ['Agidyne', 0],
             ['Stagnant Air', 0],
             ['Evil Smile', 0],
             ['Maragidyne', 62],
             ['Ghastly Wail', 63],
-            ['Absorb Fire', 64],
+            ['DRAIN Fire', 64],
             ['Fire Amp', 65]
         ],
         stats: [32, 45, 42, 31, 37],
@@ -2147,7 +2147,7 @@ export const Personas: PersonaMap = {
         level: 72,
 		currentLevel: 72,
         arcana: Arcana.DEATH,
-        affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL],
+        affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL],
         skills: [
             ['Megidola', 0],
             ['Matarukaja', 0],
@@ -2311,7 +2311,7 @@ export const Personas: PersonaMap = {
         level: 52,
 		currentLevel: 52,
         arcana: Arcana.FORTUNE,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL],
         skills: [
             ['Ziodyne', 0],
             ['Garudyne', 0],
@@ -2380,7 +2380,7 @@ export const Personas: PersonaMap = {
         level: 84,
 		currentLevel: 84,
         arcana: Arcana.EMPEROR,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.REPEL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.REPEL],
         skills: [
             ['Thunder Reign', 0],
             ['Myriad Slashes', 0],
@@ -2521,7 +2521,7 @@ export const Personas: PersonaMap = {
         level: 21,
 		currentLevel: 21,
         arcana: Arcana.HANGEDMAN,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Agilao', 0],
             ['Double Fangs', 0],
@@ -2804,7 +2804,7 @@ export const Personas: PersonaMap = {
         level: 78,
 		currentLevel: 78,
         arcana: Arcana.LOVERS,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL],
         skills: [
             ['Sword Dance', 0],
             ['Charge', 0],
@@ -2944,7 +2944,7 @@ export const Personas: PersonaMap = {
             ['Invigorate 3', 95],
             ['Fortify Spirit', 96],
             ['Concentrate', 97],
-            ['Absorb Ice', 98]
+            ['DRAIN Ice', 98]
         ],
         stats: [62, 59, 55, 52, 55],
         trait: 'Cocytus',
@@ -2957,7 +2957,7 @@ export const Personas: PersonaMap = {
         level: 95,
 		currentLevel: 95,
         arcana: Arcana.FOOL,
-        affinities: [Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.NULL, Affinity.ABSORB],
+        affinities: [Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.NULL, Affinity.DRAIN],
         skills: [
             ['Maeigaon', 0],
             ['Megidolaon', 0],
@@ -3083,7 +3083,7 @@ export const Personas: PersonaMap = {
         level: 82,
 		currentLevel: 82,
         arcana: Arcana.JUDGEMENT,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.REPEL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NULL, Affinity.NULL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.REPEL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NULL, Affinity.NULL],
         skills: [
             ['Psycho Force', 0],
             ['Maziodyne', 0],
@@ -3163,7 +3163,7 @@ export const Personas: PersonaMap = {
         level: 80,
 		currentLevel: 80,
         arcana: Arcana.STAR,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.WEAK],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.WEAK],
         skills: [
             ['Kougaon', 0],
             ['Mahamaon', 0],
@@ -3236,7 +3236,7 @@ export const Personas: PersonaMap = {
         level: 24,
 		currentLevel: 24,
         arcana: Arcana.MOON,
-        affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Mabufu', 0],
             ['Sledgehammer', 0],
@@ -3255,7 +3255,7 @@ export const Personas: PersonaMap = {
         level: 83,
 		currentLevel: 83,
         arcana: Arcana.MAGICIAN,
-        affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.ABSORB, Affinity.WEAK, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.DRAIN, Affinity.WEAK, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Blazing Hell', 0],
             ['Attack Master', 0],
@@ -3274,7 +3274,7 @@ export const Personas: PersonaMap = {
         level: 16,
 		currentLevel: 16,
         arcana: Arcana.SUN,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL],
         skills: [
             ['Frei', 0],
             ['Tarunda', 0],
@@ -3313,7 +3313,7 @@ export const Personas: PersonaMap = {
         level: 27,
 		currentLevel: 27,
         arcana: Arcana.FAITH,
-        affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.WEAK],
+        affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.WEAK],
         skills: [
             ['Assault Dive', 0],
             ['Brain Shake', 0],
@@ -3389,7 +3389,7 @@ export const Personas: PersonaMap = {
         level: 34,
 		currentLevel: 34,
         arcana: Arcana.SUN,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK],
         skills: [
             ['Mazionga', 0],
             ['Tarukaja', 0],
@@ -3420,7 +3420,7 @@ export const Personas: PersonaMap = {
         level: 59,
 		currentLevel: 59,
         arcana: Arcana.JUDGEMENT,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.REPEL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.NULL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.REPEL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.NULL],
         skills: [
             ['Mafreidyne', 0],
             ['Abysmal Surge', 0],
@@ -3458,7 +3458,7 @@ export const Personas: PersonaMap = {
         level: 81,
 		currentLevel: 81,
         arcana: Arcana.JUSTICE,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.REPEL, Affinity.NEUTRAL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.REPEL, Affinity.NEUTRAL],
         skills: [
             ['Deathbound', 0],
             ['Myriad Slashes', 0],
@@ -3515,7 +3515,7 @@ export const Personas: PersonaMap = {
         level: 83,
 		currentLevel: 83,
         arcana: Arcana.FOOL,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NULL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NULL, Affinity.NULL],
         skills: [
             ['Megidolaon', 0],
             ['Magarudyne', 0],
@@ -3536,12 +3536,12 @@ export const Personas: PersonaMap = {
         level: 80,
 		currentLevel: 80,
         arcana: Arcana.COUNCILLOR,
-        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NULL],
+        affinities: [Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.WEAK, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NULL],
         skills: [
             ['Divine Judgement', 0],
             ['Bless Amp', 0],
             ['Makougaon', 0],
-            ['Absorb Bless', 82],
+            ['DRAIN Bless', 82],
             ['Fortify Spirit', 83],
             ['Invigorate 3', 84],
             ['Salvation', 85]
@@ -3594,12 +3594,12 @@ export const Personas: PersonaMap = {
         level: 64,
 		currentLevel: 64,
         arcana: Arcana.JUDGEMENT,
-        affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.ABSORB, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST],
+        affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.DRAIN, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST],
         skills: [
             ['One-shot Kill', 0],
             ['Mabufudyne', 0],
             ['Freeze Boost', 0],
-            ['Absorb Ice', 66],
+            ['DRAIN Ice', 66],
             ['Ice Amp', 67],
             ['Diamond Dust', 69]
         ],
@@ -4003,7 +4003,7 @@ export const Personas: PersonaMap = {
             ['Regenerate 3', 82],
             ['Enduring Soul', 83],
             ['Invigorate 3', 84],
-            ['Absorb Phys', 85],
+            ['DRAIN Phys', 85],
             ['Almighty Boost', 87]
         ],
         stats: [50, 50, 50, 50, 50],
@@ -4181,7 +4181,7 @@ export const Personas: PersonaMap = {
         affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.RESIST, Affinity.REPEL],
         skills: [
             ['Abyssal Wings', 0],
-            ['Absorb Curse', 0],
+            ['DRAIN Curse', 0],
             ['Myriad Slashes', 0],
             ['Life Drain', 0],
             ['Curse Amp', 53],
@@ -4201,7 +4201,7 @@ export const Personas: PersonaMap = {
         affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.RESIST, Affinity.REPEL],
         skills: [
             ['Abyssal Wings', 0],
-            ['Absorb Curse', 0],
+            ['DRAIN Curse', 0],
             ['Myriad Slashes', 0],
             ['Spirit Drain', 0],
             ['Curse Amp', 58],
