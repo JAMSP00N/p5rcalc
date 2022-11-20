@@ -13,39 +13,39 @@ interface SkillMap {
 }
 
 export const Skills: SkillMap = {
-    'Absorb Bless': {
-		name: 'Absorb Bless',
-        effect: 'Absorb Bless attacks.',
+    'Drain Bless': {
+		name: 'Drain Bless',
+        effect: 'Drain Bless attacks.',
         element: Element.PASSIVE,
     },
-    'Absorb Curse': {
-		name: 'Absorb Curse',
-        effect: 'Absorb Curse attacks.',
+    'Drain Curse': {
+		name: 'Drain Curse',
+        effect: 'Drain Curse attacks.',
         element: Element.PASSIVE,
     },
-    'Absorb Elec': {
-		name: 'Absorb Elec', effect: 'Absorb Electric attacks.', element: Element.PASSIVE},
-    'Absorb Fire': {
-		name: 'Absorb Fire',
-        effect: 'Absorb Fire attacks.',
+    'Drain Elec': {
+		name: 'Drain Elec', effect: 'Drain Electric attacks.', element: Element.PASSIVE},
+    'Drain Fire': {
+		name: 'Drain Fire',
+        effect: 'Drain Fire attacks.',
         element: Element.PASSIVE,
     },
-    'Absorb Ice': {
-		name: 'Absorb Ice',
-        effect: 'Absorb Ice attacks.',
+    'Drain Ice': {
+		name: 'Drain Ice',
+        effect: 'Drain Ice attacks.',
         element: Element.PASSIVE,
     },
-    'Absorb Nuke': {
-		name: 'Absorb Nuke',effect: 'Absorb Nuclear attacks.', element: Element.PASSIVE, },
-    'Absorb Phys': {
-		name: 'Absorb Phys',
-        effect: 'Absorb Phys attacks.',
+    'Drain Nuke': {
+		name: 'Drain Nuke',effect: 'Drain Nuclear attacks.', element: Element.PASSIVE, },
+    'Drain Phys': {
+		name: 'Drain Phys',
+        effect: 'Drain Phys attacks.',
         element: Element.PASSIVE,
     },
-    'Absorb Psy': {
-		name: 'Absorb Psy',effect: 'Absorb Psy attacks.', element: Element.PASSIVE, },
-    'Absorb Wind': {
-		name: 'Absorb Wind',effect: 'Absorb Wind attacks.', element: Element.PASSIVE, },
+    'Drain Psy': {
+		name: 'Drain Psy',effect: 'Drain Psy attacks.', element: Element.PASSIVE, },
+    'Drain Wind': {
+		name: 'Drain Wind',effect: 'Drain Wind attacks.', element: Element.PASSIVE, },
     'Abysmal Surge': {
 		name: 'Abysmal Surge',
         effect: 'Inflict Despair (medium odds) to all foes.',
