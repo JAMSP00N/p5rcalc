@@ -139,8 +139,7 @@ const getValidNormalRecipes = (result: PersonaData, lockedDlc?: string[]): Fusio
                     }
                 });
 
-                if (NO_PERSONA === parentResult)
-                {
+                if (NO_PERSONA === parentResult) {
                     const lastSibling = [ ...siblingPersonas ].pop();
                     if (!lastSibling)
                         return;
@@ -148,8 +147,7 @@ const getValidNormalRecipes = (result: PersonaData, lockedDlc?: string[]): Fusio
                     parentResult = lastSibling;
                 }
 
-                if (0 !== siblingModifier)
-                {
+                if (0 !== siblingModifier) {
                     const prIdx = siblingPersonas.findIndex(sibling => sibling.name === parentResult.name);
                     const newParentResult = siblingPersonas[prIdx + siblingModifier];
                     if (newParentResult)
@@ -255,34 +253,43 @@ export const getValidRecipes = (result: PersonaData, skills?: SkillData[], locke
                 let parent1Level: number = recipe.parents[0].level;
                 let parent2Level: number = recipe.parents[1].level;
 
-                if (recipe.parents[0].treasure)
-                {
+                if (recipe.parents[0].treasure) {
                     siblingModifier = getSiblingModifier(result.arcana, recipe.parents[0].name);
                     parent2Level = recipe.parents[1].currentLevel;
                 }
 
-                if (recipe.parents[1].treasure)
-                {
+                if (recipe.parents[1].treasure) {
                     siblingModifier = getSiblingModifier(result.arcana, recipe.parents[1].name);
                     parent1Level = recipe.parents[0].currentLevel;
                 }
 
                 const siblingPersonas = getAllPersonasOfArcana(result.arcana, lockedDlc);
-                const selfIdx = siblingPersonas.findIndex(sibling => sibling.name === result.name);
-                siblingPersonas.splice(selfIdx, 1);
+                const parentAverageLevel = 1 + Math.floor((parent1Level + parent2Level) >> 1);
 
-                const siblingLower = siblingPersonas[Math.max(selfIdx + siblingModifier - 1, 0)];
-                let siblingUpper: PersonaData|undefined = siblingPersonas[Math.min(selfIdx + siblingModifier, siblingPersonas.length - 1)];
+                let parentResult: PersonaData = NO_PERSONA;
+                siblingPersonas.forEach(sibling => {
+                    if (NO_PERSONA === parentResult && sibling.level >= parentAverageLevel) {
+                        parentResult = sibling;
+                        return;
+                    }
+                });
 
-                if (siblingLower === siblingUpper)
-                    siblingUpper = undefined;
+                if (NO_PERSONA === parentResult) {
+                    const lastSibling = [ ...siblingPersonas ].pop();
+                    if (!lastSibling)
+                        return;
 
-                const parentAverageLevel = Math.floor((parent1Level + parent2Level) >> 1);
-                const levelDelta = Math.abs(result.level - parentAverageLevel);
-                const levelDeltaLower = Math.abs((siblingLower ? siblingLower.level : 101) - parentAverageLevel);
-                const levelDeltaUpper = Math.abs((siblingUpper ? siblingUpper.level : 101) - parentAverageLevel);
+                    parentResult = lastSibling;
+                }
 
-                if (levelDelta > levelDeltaLower || levelDelta > levelDeltaUpper)
+                if (0 !== siblingModifier) {
+                    const prIdx = siblingPersonas.findIndex(sibling => sibling.name === parentResult.name);
+                    const newParentResult = siblingPersonas[prIdx + siblingModifier];
+                    if (newParentResult)
+                        parentResult = newParentResult;
+                }
+
+                if (parentResult.name !== result.name)
                     allRecipes.splice(allRecipes.findIndex(__ =>
                         __.parents[0].name === recipe.parents[0].name &&
                         __.parents[1].name === recipe.parents[1].name
@@ -299,8 +306,7 @@ export const getValidRecipes = (result: PersonaData, skills?: SkillData[], locke
                     });
                 });
 
-                if (completable.includes(false))
-                {
+                if (completable.includes(false)) {
                     allRecipes.splice(allRecipes.findIndex(__ =>
                         __.parents[0].name === recipe.parents[0].name &&
                         __.parents[1].name === recipe.parents[1].name
