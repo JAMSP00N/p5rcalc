@@ -121,7 +121,7 @@ export default {
 <template>
     <datalist id="skills-datalist">
         <optgroup v-for="element in elements" :key="element" :label="element">
-            <template v-for="skill in getAllSkillsOfElement(element)" :key="skill.name">
+            <template v-if="personaCanInherit(persona, element)" v-for="skill in getAllSkillsOfElement(element)" :key="skill.name">
                 <option v-if="!skill.unique">{{ skill.name }}</option>
             </template>
         </optgroup>
