@@ -73,7 +73,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [45, 61, 49, 54, 47],
         trait: 'Just Die',
-        'max': true
+        max: true
     },
     'Alilat': {
 		name: 'Alilat',
@@ -164,7 +164,7 @@ export const Personas: PersonaMap = {
         affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NULL, Affinity.NULL],
         skills: [ ['Hamaon', 0], ['Mudoon', 0], ['Makouga', 0], ['Maeiga', 36], ['Dekunda', 37], ['Resist Bless', 38] ],
         stats: [19, 24, 22, 21, 23],
-        trait: 'DEATHly Illness'
+        trait: 'Deathly Illness'
     },
     'Anzu': {
 		name: 'Anzu',
@@ -255,7 +255,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [54, 56, 55, 54, 40],
         trait: 'Naranari',
-        'max': true
+        max: true
     },
     'Arsene': {
 		name: 'Arsene',
@@ -287,7 +287,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [52, 48, 51, 49, 35],
         trait: 'Atomic Hellscape',
-        'max': true
+        max: true
     },
     'Atavaka': {
 		name: 'Atavaka',
@@ -345,7 +345,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [49, 50, 48, 54, 52],
         trait: 'Vitality of the Tree',
-        'max': true
+        max: true
     },
     'Baal': {
 		name: 'Baal',
@@ -415,7 +415,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [55, 61, 54, 56, 42],
         trait: 'Mother\'s Lament',
-        'max': true
+        max: true
     },
     'Belial': {
 		name: 'Belial',
@@ -671,7 +671,8 @@ export const Personas: PersonaMap = {
             ['Concentrate', 94]
         ],
         stats: [56, 57, 54, 53, 51],
-        trait: 'Chi You\'s Blessing'
+        trait: 'Chi You\'s Blessing',
+        max: true,
     },
     'Chimera': {
 		name: 'Chimera',
@@ -792,7 +793,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [44, 57, 49, 51, 55],
         trait: 'Linked Bloodline',
-        'max': true
+        max: true
     },
     'Daisoujou': {
 		name: 'Daisoujou',
@@ -1027,7 +1028,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [60, 58, 55, 52, 40],
         trait: 'Will of the Sword',
-        'max': true
+        max: true
     },
     'Fuu-Ki': {
 		name: 'Fuu-Ki',
@@ -1347,7 +1348,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [48, 59, 49, 58, 48],
         trait: 'Grace of Mother',
-        'max': true
+        max: true
     },
     'Isis': {
 		name: 'Isis',
@@ -1588,7 +1589,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [43, 51, 50, 53, 38],
         trait: 'Universal Law',
-        'max': true
+        max: true
     },
     'Koppa Tengu': {
 		name: 'Koppa Tengu',
@@ -1737,7 +1738,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [39, 49, 41, 47, 38],
         trait: 'Wealth of Lotus',
-        'max': true
+        max: true
     },
     'Lamia': {
 		name: 'Lamia',
@@ -1865,7 +1866,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [61, 59, 59, 56, 51],
         trait: 'Allure of Wisdom',
-        'max': true
+        max: true
     },
     'Macabre': {
 		name: 'Macabre',
@@ -1905,7 +1906,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [55, 54, 61, 59, 48],
         trait: 'Drunken Passion',
-        'max': true
+        max: true
     },
     'Makami': {
 		name: 'Makami',
@@ -1974,7 +1975,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [52, 66, 53, 54, 61],
         trait: 'Ave Maria',
-        'max': true
+        max: true
     },
     'Matador': {
 		name: 'Matador',
@@ -2004,7 +2005,7 @@ export const Personas: PersonaMap = {
             ['God\'s Hand', 65]
         ],
         stats: [37, 32, 40, 39, 33],
-        trait: 'DEATHly Illness'
+        trait: 'Deathly Illness'
     },
     'Metatron': {
 		name: 'Metatron',
@@ -2025,7 +2026,8 @@ export const Personas: PersonaMap = {
             ['Divine JUDGEMENT', 95]
         ],
         stats: [54, 61, 60, 57, 42],
-        trait: 'Martyr\'s Gift'
+        trait: 'Martyr\'s Gift',
+        max: true
     },
     'Michael': {
 		name: 'Michael',
@@ -2177,7 +2179,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [55, 54, 48, 50, 55],
         trait: 'Ghost Nest',
-        'max': true
+        max: true
     },
     'Mothman': {
 		name: 'Mothman',
@@ -2392,7 +2394,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [53, 58, 54, 52, 42],
         trait: 'Bargain Bolts',
-        'max': true
+        max: true
     },
     'Okuninushi': {
 		name: 'Okuninushi',
@@ -2432,7 +2434,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [56, 53, 57, 59, 49],
         trait: 'Demon\'s Bite',
-        'max': true
+        max: true
     },
     'Oni': {
 		name: 'Oni',
@@ -2889,7 +2891,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [46, 51, 49, 48, 38],
         trait: 'Omen',
-        'max': true
+        max: true
     },
     'Sandman': {
 		name: 'Sandman',
@@ -2948,7 +2950,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [62, 59, 55, 52, 55],
         trait: 'Cocytus',
-        'max': true
+        max: true
     },
     'Satanael': {
 		name: 'Satanael',
@@ -3528,7 +3530,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [56, 51, 49, 57, 43],
         trait: 'Vahana\'s Wings',
-        'max': true
+        max: true
     },
     'Vohu Manah': {
 		name: 'Vohu Manah',
@@ -3548,7 +3550,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [46, 59, 45, 56, 41],
         trait: 'Positive Thoughts',
-        'max': true
+        max: true
     },
     'White Rider': {
 		name: 'White Rider',
@@ -3682,7 +3684,7 @@ export const Personas: PersonaMap = {
         ],
         stats: [57, 45, 50, 56, 39],
         trait: 'Undying Fury',
-        'max': true
+        max: true
     },
     'Zouchouten': {
 		name: 'Zouchouten',
