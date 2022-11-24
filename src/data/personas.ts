@@ -37,7 +37,7 @@ export const Personas: PersonaMap = {
             ['Enduring Soul', 0],
             ['Flash Bomb', 78],
             ['Ailment Boost', 79],
-            ['DRAIN Phys', 80],
+            ['Drain Phys', 80],
             ['Gigantomachia', 81]
         ],
         stats: [51, 42, 58, 38, 43],
@@ -340,7 +340,7 @@ export const Personas: PersonaMap = {
             ['Thermopylae', 0],
             ['Enduring Soul', 84],
             ['Samarecarm', 85],
-            ['DRAIN Curse', 86],
+            ['Drain Curse', 86],
             ['Blazing Hell', 88]
         ],
         stats: [49, 50, 48, 54, 52],
@@ -667,7 +667,7 @@ export const Personas: PersonaMap = {
             ['Gigantomachia', 0],
             ['Fortify Spirit', 90],
             ['Psycho Blast', 91],
-            ['DRAIN Psy', 92],
+            ['Drain Psy', 92],
             ['Concentrate', 94]
         ],
         stats: [56, 57, 54, 53, 51],
@@ -787,7 +787,7 @@ export const Personas: PersonaMap = {
             ['Makougaon', 0],
             ['Amrita Shower', 84],
             ['Auto-Maraku', 86],
-            ['DRAIN Bless', 87],
+            ['Drain Bless', 87],
             ['Salvation', 89]
         ],
         stats: [44, 57, 49, 51, 55],
@@ -945,7 +945,7 @@ export const Personas: PersonaMap = {
             ['Atomic Flare', 88],
             ['Nuke Amp', 90],
             ['Debilitate', 91],
-            ['DRAIN Nuke', 92]
+            ['Drain Nuke', 92]
         ],
         stats: [61, 55, 58, 48, 43],
         trait: 'Ailment Hunter',
@@ -1339,7 +1339,7 @@ export const Personas: PersonaMap = {
         skills: [
             ['Mediarahan', 0],
             ['Samarecarm', 0],
-            ['DRAIN Wind', 0],
+            ['Drain Wind', 0],
             ['Insta-Heal', 87],
             ['Maziodyne', 88],
             ['Spell Master', 89],
@@ -1838,7 +1838,7 @@ export const Personas: PersonaMap = {
             ['Abysmal Surge', 0],
             ['Life Drain', 0],
             ['Maeigaon', 72],
-            ['DRAIN Curse', 73],
+            ['Drain Curse', 73],
             ['Spirit Drain', 74],
             ['Fortify Spirit', 75]
         ],
@@ -1855,13 +1855,13 @@ export const Personas: PersonaMap = {
         affinities: [Affinity.NULL, Affinity.NULL, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.DRAIN],
         skills: [
             ['Gigantomachia', 0],
-            ['DRAIN Curse', 0],
+            ['Drain Curse', 0],
             ['Morning Star', 94],
             ['Spell Master', 95],
             ['Heat Riser', 96],
             ['Repel Bless', 97],
             ['Insta-Heal', 98],
-            ['DRAIN Phys', 99]
+            ['Drain Phys', 99]
         ],
         stats: [61, 59, 59, 56, 51],
         trait: 'Allure of Wisdom',
@@ -2135,7 +2135,7 @@ export const Personas: PersonaMap = {
             ['Evil Smile', 0],
             ['Maragidyne', 62],
             ['Ghastly Wail', 63],
-            ['DRAIN Fire', 64],
+            ['Drain Fire', 64],
             ['Fire Amp', 65]
         ],
         stats: [32, 45, 42, 31, 37],
@@ -2944,7 +2944,7 @@ export const Personas: PersonaMap = {
             ['Invigorate 3', 95],
             ['Fortify Spirit', 96],
             ['Concentrate', 97],
-            ['DRAIN Ice', 98]
+            ['Drain Ice', 98]
         ],
         stats: [62, 59, 55, 52, 55],
         trait: 'Cocytus',
@@ -3541,7 +3541,7 @@ export const Personas: PersonaMap = {
             ['Divine Judgement', 0],
             ['Bless Amp', 0],
             ['Makougaon', 0],
-            ['DRAIN Bless', 82],
+            ['Drain Bless', 82],
             ['Fortify Spirit', 83],
             ['Invigorate 3', 84],
             ['Salvation', 85]
@@ -3599,7 +3599,7 @@ export const Personas: PersonaMap = {
             ['One-shot Kill', 0],
             ['Mabufudyne', 0],
             ['Freeze Boost', 0],
-            ['DRAIN Ice', 66],
+            ['Drain Ice', 66],
             ['Ice Amp', 67],
             ['Diamond Dust', 69]
         ],
@@ -4003,7 +4003,7 @@ export const Personas: PersonaMap = {
             ['Regenerate 3', 82],
             ['Enduring Soul', 83],
             ['Invigorate 3', 84],
-            ['DRAIN Phys', 85],
+            ['Drain Phys', 85],
             ['Almighty Boost', 87]
         ],
         stats: [50, 50, 50, 50, 50],
@@ -4181,7 +4181,7 @@ export const Personas: PersonaMap = {
         affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.RESIST, Affinity.REPEL],
         skills: [
             ['Abyssal Wings', 0],
-            ['DRAIN Curse', 0],
+            ['Drain Curse', 0],
             ['Myriad Slashes', 0],
             ['Life Drain', 0],
             ['Curse Amp', 53],
@@ -4201,7 +4201,7 @@ export const Personas: PersonaMap = {
         affinities: [Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.WEAK, Affinity.RESIST, Affinity.REPEL],
         skills: [
             ['Abyssal Wings', 0],
-            ['DRAIN Curse', 0],
+            ['Drain Curse', 0],
             ['Myriad Slashes', 0],
             ['Spirit Drain', 0],
             ['Curse Amp', 58],
