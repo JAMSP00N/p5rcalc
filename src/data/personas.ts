@@ -2023,7 +2023,7 @@ export const Personas: PersonaMap = {
             ['Hama Boost', 92],
             ['Concentrate', 93],
             ['Bless Amp', 94],
-            ['Divine JUDGEMENT', 95]
+            ['Divine Judgement', 95]
         ],
         stats: [54, 61, 60, 57, 42],
         trait: 'Martyr\'s Gift',
@@ -2038,7 +2038,7 @@ export const Personas: PersonaMap = {
         arcana: Arcana.JUDGEMENT,
         affinities: [Affinity.NEUTRAL, Affinity.RESIST, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.NEUTRAL, Affinity.REPEL, Affinity.NULL],
         skills: [
-            ['Divine JUDGEMENT', 0],
+            ['Divine Judgement', 0],
             ['Mabufudyne', 0],
             ['Debilitate', 0],
             ['Sword Dance', 89],
@@ -2473,7 +2473,7 @@ export const Personas: PersonaMap = {
             ['Thunder Reign', 0],
             ['Psycho Force', 0],
             ['Atomic Flare', 0],
-            ['Divine JUDGEMENT', 0],
+            ['Divine Judgement', 0],
             ['Demonic Decree', 0],
             ['Immunity', 0],
             ['Mouth of Savoring', 0],
